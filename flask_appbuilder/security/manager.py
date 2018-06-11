@@ -499,7 +499,7 @@ class BaseSecurityManager(AbstractSecurityManager):
             :param user:
                 The authenticated user model
         """
-        if isintance(user, bool):
+        if isinstance(user, bool):
             return None
         if not user.login_count:
             user.login_count = 0
